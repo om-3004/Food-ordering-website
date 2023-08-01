@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Document</title>
+    <style>
+        .order{
+            margin-top: 5%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="#" class="logo"><i class="fas-fa-untensils">resto</i></a></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="pro.html#home">Home</a></li>
+                <li><a href="pro.html#about" >About</a></li>
+                
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="../php_files/dishes.php">Dishes</a></li>
+                <li><a href="../history.php">Order history</a></li>
+                <li><a href="pro.html#review">Review</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="index1.html">admin</a></li>
+                
+            </ul>
+        </div>
+    </header>
+
+    <!-- order form -->
+<section class="order" id="order">
+    <h3 class="sub-heading">Order now</h3>
+    <h1 class="heading">Free and Fast</h1>
+
+    <form action="pro.php" method="post">
+
+        <div class="inputBox">
+            <div class="input">
+                <span>Your name</span>
+                <input type="text" name="name" placeholder="Enter your name">
+            </div>
+            <div class="input">
+                <span>Your Phone no. </span>
+                <input type="tel" name="no" placeholder="Enter your number">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>Your order</span>
+                <select name="order_name" id="" title="item_select">
+                    <option value="Spicy Noodles">Spicy Noodles</option>
+                    <option value="Masala Dosa">Masala Dosa</option>
+                    <option value="Farmhouse Pizza">Farmhouse Pizza</option>
+                    <option value="Mini-Burgers">Mini-Burgers</option>
+                    <option value="Cheese Nuggets">Cheese Nuggets</option>
+                    <option value="Cholle Kulche">Cholle Kulche</option>
+                    <option value="Tutti Frutti Ice cream">Tutti Frutti Ice cream</option>
+                    <option value="Manchurian Balls">Manchurian Balls</option>
+                    <option value="Black Cureent Ice cream">Black Cureent Ice cream</option>
+                    <option value="cheesy-7 pizza">Cheesy-7 Pizza</option>
+                    <option value="Peri Peri Burger">Peri Peri Burger</option>
+                    <option value="Gotala Dosa">Gotala Dosa</option>
+                    <option value="Sizzling Brownie with ice-cream">Sizzling Brownie with ice-cream</option>
+                    <option value="Dal Makhni Fondue">Dal Makhni Fondue</option>
+                    <option value="Grilled Veg Sandwich">Grilled Veg Sandwich</option>
+                    <option value="Mojito Blast">Mojito Blast</option>
+                </select>
+                <!-- <input type="text" name="order_name" placeholder="Enter your order"> -->
+            </div>
+            <div class="input">
+                <span>Additionals</span>
+                <select name="additionals" id="" title="extras">
+                    <option value="Cheese Dip">Cheese Dip</option>
+                    <option value="Coca-cola">Coca-cola</option>
+                    <option value="Masala Papad">Masala Papad</option>
+                    <option value="Buttermilk">Buttermilk</option>
+                </select>
+                <!-- <input type="number" name="additionals" placeholder="Extra along with food"> -->
+            </div>
+        </div>
+
+        <div class="inputBox">
+            <div class="input">
+                <span>How much</span>
+                <input type="number" name="quantity" placeholder="Number of orders">
+            </div>
+            <div class="input">
+                <span>Date and time</span>
+                <input type="datetime-local" placeholder="Enter your number">
+            </div>
+        </div>
+
+        <!-- <div class="inputBox">
+                <div class="input">
+                    <span>Your Address</span>
+                    <textarea name="address" id="" cols="30" rows="10" placeholder="Enter your address"></textarea>
+                </div>
+                <div class="input">
+                    <span>Your message </span>
+                    <input type="number" placeholder="Enter your message">
+                </div>
+            </div> -->
+
+        <div class="formBtn">
+            <input type="submit" value="order now" class="btn">
+        </div>
+    </form>
+</section>
+
+
+<!-- Order section ends -->
+
+
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Locations</h3>
+                <a href="#">India</a>
+                <a href="#">Japan</a>
+                <a href="#">Russia</a>
+                <a href="#">USA</a>
+                <a href="#">France</a>
+            </div>
+    
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="pro.html">Home</a>
+                <a href="dishes.html">Dishes</a>
+                <a href="pro.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="pro.html">Review</a>
+                <a href="order.html">Order</a>
+            </div>
+    
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#">+91 1234567890</a>
+            </div>
+        </div>
+    
+        <div class="credit">
+            copyright @ 2023 by <span>LD college students
+            </span></div>
+    </section>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            navbar = document.querySelector(".nav-bar");
+            home = document.querySelector(".home");
+        
+            navbar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

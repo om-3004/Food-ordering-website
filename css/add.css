@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --green : #27ae60;
+    --black : #333;
+    --white : #fff;
+    --bg-color : #efe;
+    --box-shadow : 0 0.5rem 1rem rgba(0,0,0,0.1);
+    --border : 1rem solid var(--black);
+}
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.header{
+    background: #27ae60;
+    color: #fff;
+}
+.container{
+    max-width: 500px;
+    padding: 2rem;
+    
+    background: var(--bg-color);
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-product-form-container form{
+    max-width: 55rem;
+    padding: 2rem;
+    display: block;
+    border-radius: 0.5rem;
+    background: var(--bg-color);
+}
+.admin-product-form-container form h3{
+    text-transform: capitalize;
+    color: var(--black);
+    text-align: center;
+    font-size: 2.5rem;
+}
+.start{
+    margin-top: 2rem !important;
+}
+ .box{
+    width: 100%;
+    height: 15%;
+    border-radius: 0.5rem;
+    padding: .4rem .4rem;
+    font-size: 1.1rem;
+    margin: .4rem 0;
+    background: var(--white);
+}
+.desc{
+    text-transform: none;
+}
+.btn{
+    text-decoration: none;
+    display: block;
+    width: 40% !important;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    padding: 0.4rem 2rem;
+    background: var(--green);
+    color: var(--white);
+    font-weight: bold;
+
+}
+.btn:hover{
+    background: var(--black);
+    color: var(--green);
+}
+.message{
+    display: block;
+    background: var(--bg-color);
+    padding: .4rem .35rem;
+    font-size: 1.2rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+}
